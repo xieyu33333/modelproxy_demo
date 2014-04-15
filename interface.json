@@ -1,0 +1,35 @@
+{
+    "title": "测试",
+    "version": "1.0.0",
+    "engine": "mockjs",
+    "rulebase": "./interfaceRules/",
+    "status": "online",
+    "interfaces": [ {
+        "name": "首页推荐列表",
+        "id": "Recommend.index",
+        "urls": {
+            "online": "http://recdm.csdn.net/getRecommendList.html"
+        }
+    }, {
+        "name": "频道列表",
+        "id": "Recommend.channel",
+        "urls": {
+            "online": "http://recdm.csdn.net/getNewsList.html"
+        }
+    }, {
+        "name": "文章详情",
+        "id": "Recommend.detail",
+        "urls": {
+            "online": "http://recdm.csdn.net/getNewsDetail.html"
+        }
+    }, {
+        "name": "相关推荐",
+        "id": "Recommend.about",
+        "urls": {
+            "online": "http://recdm.csdn.net/getNewsListByAritcle.html"
+        }
+    }],
+    "combo": {
+        "getMyData": [ "Cart.getCart", "Search.suggest" ]
+    }
+}
